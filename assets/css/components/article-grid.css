@@ -1,0 +1,112 @@
+.article-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 480px); */
+  /* grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); */
+  /* maximo de pantalla movil 340px */
+  grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr));
+  gap: 32px;
+  /* background-color: green; */
+}
+
+.article-grid-hobbies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 15px;
+}
+
+.article-grid-item {
+  /* background-color: aqua; */
+
+  display: flex;
+  /* gap: 8px; */
+  flex-direction: column;
+  /* align-content: center; */
+  padding: 8px;
+  /* gap da espacio en flex y grid en la lineas entrecortadas asimimos da espacio internmente en este caso como es la direccion columna da esacio interno de 10px */
+  gap: 10px;
+}
+
+
+.article-grid-item a:hover {
+  /* background-color: green; */
+  text-decoration: underline;
+}
+
+
+#icon-list {
+  width: 32px;
+  height: 32px;
+  /* padding: 0; */
+}
+
+.article-grid-about-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 16px;
+  height: auto;
+}
+
+.article-grid-about-item img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.display-about-right {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text);
+}
+
+.article-grid-portafolio {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+}
+
+.article-grid-portafolio:hover {
+  border: 3px solid deeppink;
+}
+
+.header-article-portafolio {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.header-article-portafolio img {
+  margin: 8px;
+}
+
+.content-article-portafolio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-article-portafolio {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.footer-article-portafolio a {
+  padding: 2px 10px;
+  background-color: var(--primary-lighter);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 970px) {
+  .article-grid-hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+    gap: 15px;
+  }
+}

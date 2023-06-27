@@ -1,0 +1,103 @@
+.header {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  /* var de la clase color.css en global se llama con var por la instancia de la calse :root definida alli */
+  background-color: var(--gray-100);
+  text-align: center;
+  color: var(--text);
+  padding: 16px 0;
+}
+
+.header.bg-secondary-dark {
+  background-color: var(--secondary-dark);
+}
+
+.header__logo {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar--links {
+  display: flex;
+  /* para que ocupe todo el espacio del li y borre el . */
+  padding: 0;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.navbar--links .link {
+  text-decoration: none;
+  color: var(--primary-regular);
+  /* 1em 16px
+  arriba abajo 0.5em(8px) y 0.75em(12px) izquierda y derecha */
+  padding: 0.5em 0.75em;
+  border-radius: 4px;
+  display: block;
+  line-height: 1rem;
+}
+
+/* #media querie hamburguesa */
+.hamb {
+  display: none;
+}
+
+/* lo envolvemos en un div para que los ancors ocupen el 100% del espacio */
+.menu-mobile {
+  width: 100%;
+}
+
+.navbar--links--mobile {
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  gap: 0.3em;
+  display: none;
+}
+
+.navbar--links--mobile .link {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-regular);
+  padding: 0.5em 0.75em;
+  border-radius: 4px;
+  line-height: 1rem;
+}
+
+.navbar--links--mobile .link:hover {
+  background-color: var(--pink-200);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 809px) {
+  .navbar--links {
+    display: none;
+  }
+
+  .hamb {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+
+  .navbar--links--mobile--open {
+    display: block;
+  }
+}

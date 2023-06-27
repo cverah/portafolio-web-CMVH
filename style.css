@@ -1,0 +1,165 @@
+/* * { */
+/* border: 1px solid green; */
+/* box-sizing: border-box; */
+/* } */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #F3F4F6; */
+}
+
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #44403C;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+
+}
+
+#title {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+}
+
+#blockquote {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  background-color: #D6D3D1;
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.subtitle {
+  margin-top: 56px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+
+}
+
+.content {
+
+  max-width: 736px;
+  margin: 0 auto;
+  color: #111827;
+  padding: 0 16px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+
+}
+
+p#last-paragraph {
+  margin-bottom: 77px;
+}
+
+a {
+  color: #BE185D;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+
+}
+
+figure {
+  margin: auto 0;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 8px;
+  /* para que ocupe todo el ancho la imagen como un cadrado y no deje espacios */
+  display: block;
+}
+
+figure figcaption {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* .content {
+
+  max-width: 736px;
+  margin: 0 auto;
+  color: #111827;
+  padding: 0 16px;
+} */
+/* menuuu */
+.menu {
+  background-color: #F3F4F6;
+}
+
+.menu .content {
+  padding: 0 16px;
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #F3F4F6;
+  flex-wrap: wrap;
+}
+
+#name {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-right: 0;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* gap para das espacios entre los a */
+  gap: 24px;
+  /* padding 0 quita el espacio entre la viñeta y el texto */
+  padding: 0;
+}
+
+.items li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #DB2777;
+}
+
+.items li a:hover {
+  color: #FFFFFF;
+  background-color: #DB2777;
+  border-radius: 6px;
+}

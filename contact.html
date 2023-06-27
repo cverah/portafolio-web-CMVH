@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/article-grid.css">
+    <title>HOME CMVH</title>
+    <link rel="shortcut icon" href="./assets/images/icons.png" type="image/x-icon">
+    <!-- <style>
+      *{
+        border: 1px solid green
+      }
+    </style> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-lg">
+        <!-- <h1 class="heading-md semi-bold header__logo">HEADER</h1> -->
+        <nav class="navbar">
+          <h1 class="heading-md">Cristhian M. Vera Huamani</h1>
+          <!-- # hamburguesa media querie -->
+          <img class="hamb" src="./assets/images/icons/hamb.svg" alt="hamb" onclick="showMenu()">
+          
+          <ul class="navbar--links list-style-none">
+            <li>
+              <a href="article.html" class="link text-md">Articles</a>
+            </li>
+            <li>
+                <a href="portafolio.html" class="link text-md">Portafolio</a>
+            </li>
+            <li>
+              <a href="about.html" class="link text-md">About</a>
+            </li>
+            <li>
+              <a href="contact.html" type="button" class="button button--primary button--sm text-decoration-none">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar-mobile">
+          <div class="menu-mobile">
+            <ul class="navbar--links--mobile list-style-none">
+              <li>
+                <a href="#" class="link text-md">Articles</a>
+              </li>
+              <li>
+                <a href="#" class="link text-md">Portafolio</a>
+              </li>
+              <li>
+                <a href="#" class="link text-md">About</a>
+              </li>
+              <li>
+                <a href="#" type="button" class="button button--primary button--sm text-decoration-none">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+      </div>
+    </header>
+
+    <section class="section-md">
+      <div class="container-lg">
+        <div class="center">
+          <h1 class="heading-lg semi-bold mb-1/4">Contact Me</h1>
+          <p class="text-lg light">Looking to expand your team? Or do you need a web developer for a specific project? If I can help you in any way don't hesitate to fill this form.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container-md">
+        <div class="article-grid mb-2">
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <label for="firtsname" class="text-xs light overline mb-1/4 block text-uppercase">firts name</label>
+              <input class="input" type="text" name="firtsname" id="firtsname" placeholder="Cristhian">
+            </div>
+          </article>
+
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <label for="lastname" class="text-xs light overline mb-1/4 block text-uppercase">last name</label>
+              <input class="input" type="text" name="lastname" id="lastname" placeholder="Vera">
+            </div>
+          </article>
+
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <label for="email" class="text-xs light overline mb-1/4 block text-uppercase">email</label>
+              <input class="input" type="email" name="email" id="email" placeholder="cristhian@gmail.com">
+            </div>
+          </article>
+
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <label for="company" class="text-xs light overline mb-1/4 block text-uppercase">company</label>
+              <input class="input" type="text" name="company" id="company" placeholder="Company S.A">
+            </div>
+          </article>
+
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <label for="phone" class="text-xs light overline mb-1/4 block text-uppercase">phone</label>
+              <input class="input" type="number" name="phone" id="phone" placeholder="928646027">
+            </div>
+          </article>
+
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <label for="country" class="text-xs light overline mb-1/4 block text-uppercase">country</label>
+              <select class="select light" name="country" id="country" >
+                <option class="light" disabled selected>Select one option</option>
+                <option class="light" value="PE">Peru</option>
+                <option class="light" value="BO">Bolivia</option>
+                <option class="light" value="ME">Mexico</option>
+              </select>
+              
+            </div>
+          </article>
+          
+          <article class="article-grid-item" id="padding-0">
+            <div>
+              <div class="checkbox-group-column">
+                <p class="light text-xs overline text-uppercase" >How can I help you?</p>
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input" />
+                  <div>
+                    <label for="checkbox" class="light text-sm
+                    " id="margin-0">Job Offer</label>
+                    <span class="input__message input__message--help light text-xs gray-500" id="margin-0"> If you are looking to expand your team</span>
+                  </div>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input" />
+                  <div>
+                    <label for="checkbox" class="light text-sm
+                    " id="margin-0">Project Offer</label>
+                    <span class="input__message input__message--help light text-xs gray-500" id="margin-0"> If you are looking to expand your team</span>
+                  </div>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input" />
+                  <div>
+                    <label for="checkbox" class="light text-sm
+                    " id="margin-0">Collaboration</label>
+                    <span class="input__message input__message--help light text-xs gray-500" id="margin-0"> If you are looking to expand your team</span>
+                  </div>
+                </div>
+                
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input" />
+                  <div>
+                    <label for="checkbox" class="light text-sm
+                    " id="margin-0">Other</label>
+                  </div>
+                </div>
+              </div>      
+            </div>
+          </article>
+        </div>
+        <div class="block">
+          <a href="#" class="button buttton-xl button--primary text-decoration-none">Send</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-padding-md bg-stone-400">
+      <div class="container-lg">
+        <div class="center">
+          <h1 class="semi-bold heading-xl mb-2 ">Can I help you?</h1>
+          <a href="#" class="button--xl button--primary text-decoration-none semi-bold inline-block br-1/2">Get in touch!</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let navBarMobile = document.querySelector(".navbar--links--mobile");
+      // alert(navBarMobile)
+      function showMenu(){
+        navBarMobile.classList.toggle("navbar--links--mobile--open");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/article-grid.css">
+    <title>HOME CMVH</title>
+    <link rel="shortcut icon" href="./assets/images/icons.png" type="image/x-icon">
+    <style>
+      /* *{
+        border: 1px solid green
+      } */
+    </style>
+  </head>
+<body>
+  <header class="header">
+    <div class="container-lg">
+      <!-- <h1 class="heading-md semi-bold header__logo">HEADER</h1> -->
+      <nav class="navbar">
+        <h1 class="heading-md">Cristhian M. Vera Huamani</h1>
+        <!-- # hamburguesa media querie -->
+        <img class="hamb" src="./assets/images/icons/hamb.svg" alt="hamb" onclick="showMenu()">
+        
+        <ul class="navbar--links list-style-none">
+          <li>
+            <a href="article.html" class="link text-md">Articles</a>
+          </li>
+          <li>
+              <a href="portafolio.html" class="link text-md">Portafolio</a>
+          </li>
+          <li>
+            <a href="about.html" class="link text-md">About</a>
+          </li>
+          <li>
+            <a href="contact.html" type="button" class="button button--primary button--sm text-decoration-none">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar-mobile">
+        <div class="menu-mobile">
+          <ul class="navbar--links--mobile list-style-none">
+            <li>
+              <a href="#" class="link text-md">Articles</a>
+            </li>
+            <li>
+              <a href="#" class="link text-md">Portafolio</a>
+            </li>
+            <li>
+              <a href="#" class="link text-md">About</a>
+            </li>
+            <li>
+              <a href="#" type="button" class="button button--primary button--sm text-decoration-none">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  
+  <section class="section-padding-md bg-secondary-light" >
+    <div class="container-lg">
+      <p class="heading-xl mb-1">Hi! I'm <strong class="primary-regular"> Testino</strong>, full stack developer looking for new adventures</p>
+      <p class="text-xl light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget velit risus tellus viverra luctus in odio amet. Quisque viverra integer lectus euismod quisque adipiscing. Sed posuere sed bibendum mi orci, commodo, quam. Sagittis, donec sit bibendum mi nisl semper sed.</p>
+    </div>
+  </section>
+
+  <section class="section-padding-md">
+    <div class="container-lg">
+      <h2 class="heading-lg mb-1 center">My Skills</h2>
+      <div class="article-grid">
+        <article class="article-grid-about-item">
+          <img id="icon-list" src="./assets/images/icons/badge-check.svg" alt="icon-lisy">
+          <div class="display-about-right">
+            <h3 class="regular heading-md">Ruby</h3>
+            <p class="light text-lg">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          </div>
+        </article>
+
+        <article class="article-grid-about-item">
+          <img id="icon-list" src="./assets/images/icons/badge-check.svg" alt="icon-lisy">
+          <div class="display-about-right">
+            <h3 class="regular heading-md">Ruby on Rails</h3>
+            <p class="light text-lg">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          </div>
+        </article>
+
+        <article class="article-grid-about-item">
+          <img id="icon-list" src="./assets/images/icons/badge-check.svg" alt="icon-lisy">
+          <div class="display-about-right">
+            <h3 class="regular heading-md">Javascript</h3>
+            <p class="light text-lg">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          </div>
+        </article>
+
+        <article class="article-grid-about-item">
+          <img id="icon-list" src="./assets/images/icons/badge-check.svg" alt="icon-lisy">
+          <div class="display-about-right">
+            <h3 class="regular heading-md">React</h3>
+            <p class="light text-lg">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          </div>
+        </article>
+
+        <article class="article-grid-about-item">
+          <img id="icon-list" src="./assets/images/icons/badge-check.svg" alt="icon-lisy">
+          <div class="display-about-right">
+            <h3 class="regular heading-md">Postgresql</h3>
+            <p class="light text-lg">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          </div>
+        </article>
+
+        <article class="article-grid-about-item">
+          <img id="icon-list" src="./assets/images/icons/badge-check.svg" alt="icon-lisy">
+          <div class="display-about-right">
+            <h3 class="regular heading-md">Ruby</h3>
+            <p class="light text-lg">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding-md bg-gray-200">
+    <div class="container-lg">
+      <h2 class="center heading-2rem semi-bold mb-1">My Hobbies</h2>
+      <div class="article-grid-hobbies">
+          <article class="article-grid-about-item">
+           
+              <img src="./assets/images/photos/pizza.png" alt="img-pizza">
+            
+          </article>
+        
+        <article class="article-grid-about-item">
+          <div class="article-grid-item center">
+            <h3 class="heading-md semi-bold">Food</h3>
+            <p class="text-xl light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper cursus at viverra netus mauris, fermentum felis. lo </p>
+          </div>          
+        </article>
+
+        <article class="article-grid-about-item">
+          <img src="./assets/images/photos/hambus-with-potatoes.png" alt="img-hamb-potatoes">
+        </article>
+
+        <article class="article-grid-about-item">
+          <div class="article-grid-item center">
+            <h3 class="heading-md semi-bold">Travel</h3>
+            <p class="text-xl light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper cursus at viverra netus mauris, fermentum felis.</p>
+          </div>          
+        </article>
+
+        <article class="article-grid-about-item">
+          <img src="./assets/images/photos/playa.png" alt="img-hamb-potatoes">
+        </article>
+
+        <article class="article-grid-about-item">
+          <img src="./assets/images/photos/house-chaina.png" alt="img-hamb-potatoes">
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-padding-md bg-stone-400">
+    <div class="container-lg">
+      <div class="center">
+        <h1 class="semi-bold heading-xl mb-2 ">Can I help you?</h1>
+        <a href="#" class="button--xl button--primary text-decoration-none semi-bold inline-block br-1/2">Get in touch!</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let navBarMobile = document.querySelector(".navbar--links--mobile");
+    // alert(navBarMobile)
+    function showMenu(){
+      navBarMobile.classList.toggle("navbar--links--mobile--open");
+    }
+  </script>
+</body>
+</html>

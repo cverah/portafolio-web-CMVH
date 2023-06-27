@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs Example</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <section class="section-md">
+      <div class="container-md">
+
+        <h1 class="heading-md semi-bold mb-1">Input</h1>
+
+        <div>
+          <input class="input" type="text" name="username" placeholder="username" />
+        </div>
+
+        <br />
+
+        <div class="input input--with-icon">
+          <img src="./assets/images/icon-person.svg" alt="">
+          <input type="email" name="email" placeholder="user@email.com" />
+        </div>
+
+        <br />
+
+        <label class="text-xs regular">
+          Input label
+          <input class="input" type="text" name="username" placeholder="username" />
+          <span class="input__message input__message--help">Input Help text</span>
+        </label>
+
+        <br />
+
+        <label class="text-xs regular">
+          Input label
+          <input class="input input--error" type="email" name="email" placeholder="user@email.com" />
+          <span class="input__message input__message--error">Error Message</span>
+        </label>
+
+        <br />
+
+        <label class="text-xs regular">
+          Input label
+          <input class="input input--error" type="email" name="email" placeholder="user@email.com" />
+          <span class="input__message input__message--help">Input Help text</span>
+          <span class="input__message input__message--error">Error Message</span>
+        </label>
+
+        <br />
+
+        <h1 class="heading-md semi-bold">Selects</h1>
+
+        <br />
+
+        <select class="select">
+          <option value="">Select one Option</option>
+          <option value="1">Option one</option>
+          <option value="2">Option two</option>
+        </select>
+
+        <br />
+        <br />
+
+        <select class="select select--error">
+          <option value="">Select one Option</option>
+          <option value="1">Option one</option>
+          <option value="2">Option two</option>
+        </select>
+
+        <br />
+        <br />
+
+        <div>
+          <label class="overline text-xs regular">
+            Input label
+          </label>
+          <select class="select">
+            <option value="">Select one Option</option>
+            <option value="1">Option one</option>
+            <option value="2">Option two</option>
+          </select>
+          <span class="select__message input__message--help">Input Help text!!!!</span>
+          <span class="select__message input__message--error ">Error Message</span>
+        </div>
+
+        <br />
+
+        <div>
+          <label class=" text-xs regular">
+            Input label
+          </label>
+          <select class="select select--error">
+            <option value="">Select one Option</option>
+            <option value="1">Option one</option>
+            <option value="2">Option two</option>
+          </select>
+          <span class="select__message input__message--help ">Input Help text</span>
+          <span class="select__message input__message--error ">Error Message</span>
+        </div>
+
+        <br />
+
+        <h1 class="heading-md semi-bold">Radio Buttons</h1>
+
+        <br />
+
+        <div class="radio">
+          <input type="radio" name="radio" id="radio" class="radio__input" />
+          <div>
+            <label for="radio" class="text-sm regular">Option</label>
+            <span class="input__message input__message--help">Help Text</span>
+          </div>
+        </div>
+
+        <br />
+
+        <div>
+          <p class="head-sm text-lg regular">Select one option</p>
+          <div class="radio__opt-group">
+            <div class="radio">
+              <input type="radio" name="radio_1" id="radio_op1" class="radio__input" checked />
+              <div>
+                <label for="radio_op1" class="text-sm regular">Option</label>
+                <span class="input__message input__message--help">Help Text</span>
+              </div>
+            </div>
+            <div class="radio">
+              <input type="radio" name="radio_1" id="radio_op2" class="radio__input" />
+              <div>
+                <label for="radio_op2" class="text-sm regular">Option</label>
+                <span class="input__message input__message--help">Help Text</span>
+              </div>
+            </div>
+            <div class="radio">
+              <input type="radio" name="radio_1" id="radio_op3" class="radio__input" />
+              <div>
+                <label for="radio_op3" class="text-sm regular">Option</label>
+                <span class="input__message input__message--help">Help Text</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="head-sm text-lg regular">Select one option</p>
+          <div class="radio__opt-group radio__opt-group--horizontal">
+            <div class="radio">
+              <input type="radio" name="radio_2" id="radio_op4" class="radio__input" />
+              <div>
+                <label for="radio_op4" class="text-sm regular">Option</label>
+                <span class="input__message input__message--help">Help Text</span>
+              </div>
+            </div>
+            <div class="radio">
+              <input type="radio" name="radio_2" id="radio_op5" class="radio__input" />
+              <div>
+                <label for="radio_op5" class="text-sm regular">Option</label>
+                <span class="input__message input__message--help">Help Text</span>
+              </div>
+            </div>
+            <div class="radio">
+              <input type="radio" name="radio_2" id="radio_op6" class="radio__input" checked />
+              <div>
+                <label for="radio_op6" class="text-sm regular">Option</label>
+                <span class="input__message input__message--help">Help Text</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <h1 class="heading-md semi-bold">Checkbox Buttons</h1>
+
+        <br />
+
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input" />
+          <div>
+            <label for="checkbox" class="text-sm regular">Option</label>
+            <span class="input__message input__message--help">Help Text</span>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+  </body>
+
+</html>
