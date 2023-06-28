@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/article-grid.css">
+    <title>HOME CMVH</title>
+    <link rel="shortcut icon" href="./assets/images/icons.png" type="image/x-icon">
+    <style>
+      /* *{
+        border: 1px solid green
+      } */
+    </style>
+  </head>
+<body>
+  <header class="header">
+    <div class="container-lg">
+      <!-- <h1 class="heading-md semi-bold header__logo">HEADER</h1> -->
+      <nav class="navbar">
+        <a class="text-decoration-none" href="index.html">
+          <div class="start italic">
+            <h1 class="heading-md medium green-900">Cristhian M. Vera Huamani</h1>
+            <p class="regular text-line-height-1.1rem text-decoration-none green-900">cree en ti y los vas a lograr</p>
+          </div>
+        </a>
+        <!-- # hamburguesa media querie -->
+        <img class="hamb" src="./assets/images/icons/hamb.svg" alt="hamb" onclick="showMenu()">
+        
+        <ul class="navbar--links list-style-none">
+          <li>
+            <a href="index.html" class="link text-xl">Inicio</a>
+          </li>
+          <li>
+            <a href="about.html" class="link text-xl">Acerca de Mi</a>
+          </li>
+          <li>
+              <a href="portafolio.html" class="link text-xl">Portafolio</a>
+          </li>
+          <li>
+            <a href="contact.html" type="button" class="button button--primary button--lg text-decoration-none">Contactame</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- nav para mobile  -->
+      <nav class="navbar-mobile">
+        <div class="menu-mobile">
+          <ul class="navbar--links--mobile list-style-none">
+            <li>
+              <a href="index.html" class="link text-xl">Inicio</a>
+            </li>
+            <li>
+              <a href="about.html" class="link text-xl">Acerca de Mi</a>
+            </li>
+            <li>
+              <a href="portafolio.html" class="link text-xl">Portafolio</a>
+            </li>
+            <li>
+              <a href="contact.html" type="button" class="button button--primary button--lg text-decoration-none">Contactame</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="section-padding-sm bg-green-150">
+    <div class="container-lg">
+      <div class="article-grid-55-45">
+        <div class="item-content-description">
+          <p class="heading-lg mb-1">¡Hola! Soy <strong class="green-800"> Cristhian</strong>, desarrollador full stack en busca de nuevas aventuras.</p>
+          <p class="text-xl light justify">Con muchas ganas de aprender, conociendo amigos, desarrollando habilidades siempre tratando de conocer el como funcionan las cosas y experimentando el mundo de la programacion y la tecnologia que influye en el desarrollo de los sistemas que se utilizan en la vida diaria.</p>
+        </div>
+          <img class="br-1/2" src="./assets/images/photos/img-CMVH.jpg" alt="img-cristhian">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding-sm bg-green-80">
+    <div class="container-lg">
+      <div class="center mb-1">
+        <h2 class="heading-lg mb-1/4">Ultimos Aprendizajes</h2>
+        <p class="text-lg">Lenguajes y Herramientas que he aprendido últimamente</p>
+      </div>
+      <div class="article-grid-2columns">
+        <article class="article-grid-item">
+          <small class="semi-bold text-uppercase text-xs overline">Mayo 16, 2023</small>
+          <h3 class="regular heading-md">Aprendiendo Ruby en 4 semanas</h3>
+          <p class="light text-lg justify">Ruby es un lenguaje con un balance cuidado. Su creador, Yukihiro “Matz” Matsumoto, mezcló partes de sus lenguajes favoritos (Perl, Smalltalk, Eiffel, Ada y Lisp) para formar un nuevo lenguaje que incorporara tanto la programación funcional como la imperativa. A menudo ha manifestado que está “tratando de hacer que Ruby sea natural, no simple”, de una forma que se asemeje a la vida real.</p>
+          <a href="https://www.ruby-lang.org/es/" target="_blank" class="text-lg green-900 text-decoration-none text-uppercase overline semi-bold mt-auto">Quiero Saber Mas</a>
+        </article>
+
+        <article class="article-grid-item">
+          <small class="semi-bold text-uppercase text-xs overline">Junio 16, 2023</small>
+          <h3 class="regular heading-md">Aprendiendo HTML y CSS en 2 semanas</h3>
+          <p class="light text-lg justify">Para crear sitios web, debes conocer el HTML — la tecnología fundamental que se utiliza para definir la estructura de una página web. HTML se utiliza para especificar si tu contenido web se debe reconocer como un párrafo, lista, encabezado, enlace, imagen, reproductor multimedia, formulario o uno de los muchos otros elementos disponibles</p>
+          <a href="https://developer.mozilla.org/es/docs/Learn/HTML" class="text-lg green-900 text-decoration-none text-uppercase overline semi-bold mt-auto">Quiero Saber Mas</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <footer class="section-padding-1rem footer">
+    <div class="container-lg center">
+      <div class="article-grid-2columns">
+        <div class="footer-grid-item text-xl">
+          <strong>@Cristhian Vera 2023</strong>
+          <p>Abancay - Apurimac - Peru</p>
+          <div class="footer-contacs">
+            <img id="footer-icons" src="./assets/images/icons/square-whatsapp.svg">
+            <p class="center">+51 928646027</p>
+          </div>
+        </div>
+
+        <div class="footer-grid-item text-xl">
+          <strong>Mis Redes Sociales</strong>
+          <div  class="footer-contacs" id="gap-1.25rem">
+            <a href="https://www.facebook.com/cristianmario.verahuamani" target="_blank"><img src="./assets/images/icons/square-facebook.svg"></a>
+            <a href="#"><img src="./assets/images/icons/linkedin-icon.svg"></a>
+            <a href="https://www.instagram.com/cristhmverahuamani/" target="_blank"><img src="./assets/images/icons/square-instagram.svg"></a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <footer class="bg-black">
+    <div class="flex center bg-black">
+      <strong class="color-white" style="width: 100%;">Desarrollado con HTML y CSS puro</strong>
+      </div>
+  </footer>
+
+  <script>
+    let navBarMobile = document.querySelector(".navbar--links--mobile");
+    // alert(navBarMobile)
+    function showMenu(){
+      navBarMobile.classList.toggle("navbar--links--mobile--open");
+    }
+  </script>
+</body>
+</html>

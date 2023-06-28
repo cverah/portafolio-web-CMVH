@@ -1,12 +1,12 @@
 .header {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 36px;
   /* var de la clase color.css en global se llama con var por la instancia de la calse :root definida alli */
-  background-color: var(--gray-100);
+  background: var(--green-80);
   text-align: center;
   color: var(--text);
-  padding: 16px 0;
+  padding: 8px 0;
 }
 
 .header.bg-secondary-dark {
@@ -42,13 +42,19 @@
 
 .navbar--links .link {
   text-decoration: none;
-  color: var(--primary-regular);
+  color: var(--green-900);
   /* 1em 16px
   arriba abajo 0.5em(8px) y 0.75em(12px) izquierda y derecha */
-  padding: 0.5em 0.75em;
+  padding: 14px 16px;
   border-radius: 4px;
   display: block;
   line-height: 1rem;
+}
+
+.navbar--links .link:hover {
+  background-color: var(--green-800);
+  color: var(--white);
+  cursor: pointer;
 }
 
 /* #media querie hamburguesa */
@@ -72,18 +78,18 @@
 .navbar--links--mobile .link {
   display: block;
   text-decoration: none;
-  color: var(--primary-regular);
+  color: var(--green-900);
   padding: 0.5em 0.75em;
   border-radius: 4px;
   line-height: 1rem;
 }
 
 .navbar--links--mobile .link:hover {
-  background-color: var(--pink-200);
+  background-color: var(--green-200);
   cursor: pointer;
 }
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 857px) {
   .navbar--links {
     display: none;
   }
