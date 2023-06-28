@@ -25,6 +25,7 @@
   padding: 8px;
   /* gap da espacio en flex y grid en la lineas entrecortadas asimimos da espacio internmente en este caso como es la direccion columna da esacio interno de 10px */
   gap: 10px;
+  justify-content: space-between;
 }
 
 .article-grid-item:hover {
