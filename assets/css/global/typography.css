@@ -1,9 +1,10 @@
 /* tipografia importada de google fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
 
 :root {
-  --font-primary: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  --font-primary: "Ysabeau Infant", sans-serif;
 }
 
 body {
@@ -32,6 +33,11 @@ h6 {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.5rem;
+}
+
+.text-line-height-1\.1rem {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
 }
 
 .text-md {
