@@ -71,12 +71,13 @@
     <div class="container-lg">
       <div class="section-general-proyect">
         <div class="section-description-proyect">
-          <h2 class="heading-2xl semi-bold mb-1.25 ">CalenCLI</h2>
-          <p class="text-lg mb-1 justify">CalenCli es una interfaz de calendario en el que el usuario podra registrar un registro eventos de clases de acuerdo a la hora y fecha ingresada asimismo permite ver la agenda de la semana, recorriendo semanas hacia adelante y atras.</p>
-          <p class="text-lg mb-1 justify">En esta parte de ruby trabajamos con la gema de ruby date <i>(require "date")</i> para el manejo de fecha y colorize <i>(require "colorize")</i> para agregar algunos colores a la terminal.</p>
-          <a class="button--xl button--primary text-decoration-none inline-block br-1/2" href="https://github.com/cverah/ruby-CalenCly" target="_blank">Ir al repositorio</a>
+          <h2 class="heading-2xl semi-bold mb-1.25 ">Clivia Generator</h2>
+          <p class="text-lg mb-1 justify">Este es un programa que te permite responder 10 preguntas de genero randomico, por cada respuesta correcta se obtiene 10 puntos, 0 puntos por respuesta incorrecta, al finalizar se te permitira guardar el nombre del jugador y la opcion de visualizar los puntajes en orden de merito. Este programa realiza solicitudes efectivas y obtiene respuestas a través de la red usando Ruby, trabajando con API (TRIVIA) para manejar, usar y guardar la información de manera eficiente en un archivo JSON</p>
+          <p class="text-lg mb-1 justify">En esta parte de ruby trabajamos con la gema de ruby json <i>(require "json")</i> para el manejo de archivos de formato JSON , httparty <i>(require "httparty")</i> para conexion URL de internet, terminal table <i>(require "terminal-table")</i> para impresion en formato de tabla.</p>
+          <p class="text-lg mb-1">El API a consumir en este proyecto es el OPEN TRIVIA API que se encuentra en <a href="https://opentdb.com/api.php?amount=10" target="_blank">AQUI</a></p>
+          <a class="button--xl button--primary text-decoration-none inline-block br-1/2" href="https://github.com/cverah/ruby_Generador_CLIvia" target="_blank">Ir al repositorio</a>
         </div>
-        <img src="./assets/images/photos/svg-calencly.svg" alt="img-terminal">      
+        <img class="br-1/2" src="./assets/images/photos/proyect-clivia/img-clivia-generator.png" alt="img-clivia-generator">      
       </div>
     </div>
   </section>
@@ -93,30 +94,51 @@
           <p class="regular text-md">Realizamos lo siguiente:</p>
           <ul class="regular text-md">
             <li>Create una carpeta y en alli abre un teminal</li>
-            <li>En la terminal ejecutamos el comando <i>git clone git@github.com:cverah/ruby-CalenCly.git</i></li>
+            <li>En la terminal ejecutamos el comando <i>git clone git@github.com:cverah/ruby_Generador_CLIvia.git</i></li>
             <li>luego de ello ingresamos a la carpeta clonada (se tiene que visualizar los archivos clonados)</li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-calencly/calencly-paso1.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso1.png" alt="">
         </article>
 
         <article class="article-grid-item">
           <small class="text-uppercase text-md overline">Paso Nro 2: <strong class="semi-bold">Ejecutar Bundle install</strong></small>
-          <p class="regular text-md">Una vez terminado el paso 1 realizamos la instalacion de bundle install para que se puedan descargar las gemas del proyecto en este caso el <i>date</i> y el <i>colorize</i></p>
+          <p class="regular text-md">Una vez terminado el paso 1 realizamos la instalacion de bundle install para que se puedan descargar las gemas del proyecto en este caso el <i>json</i>, <i>terminal-table</i> y <i>httparty</i></p>
           <ul class="regular text-md">
             <li>en la terminal ejecutamos el comando <i>bundle install</i></li>
             <li>Esperamos a que se descarguen las gemas el tiempo va depender de la velocidad de descarga de su internet</i></li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-calencly/calencly-paso2.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia_paso2.png" alt="">
         </article>
 
         <article class="article-grid-item">
           <small class="text-uppercase text-md overline">Paso Nro 3: <strong class="semi-bold">Ejecutar el proyecto</strong></small>
           <p class="regular text-md">Una vez terminado el paso 2 ejecutamos el proyecto para ello hacemos lo siguiente:</p>
           <ul class="regular text-md">
-            <li>Ejecutamos el archivo <i>calencli.rb</i> con el comando <i>ruby calencli.rb</i></li>
-            <li>Introducimos los comandos segun lo mencionado en el archivo <a href="https://github.com/cverah/ruby-CalenCly/blob/main/README.md">README.md</a> y siguiente el modelo de Happy paths (buen usuario)</li>
+            <li>Ejecutamos el archivo <i>main.rb</i> con el comando <i>ruby main.rb</i></li>
+            <li>Ya dentro del programa escribimos <i>random</i> y el sistema mostrara preguntas randomicas que tendran que responder por el indice de las respuestas</li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-calencly/calencly-paso3.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso3.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Opcion Score</strong></small>
+          <p class="regular text-md">Ejecutamos lo siguiente:</p>
+          <ul class="regular text-md">
+            <li class="justify">Al finalizar las 10 preguntas el usuario tiene la opcion de guardar su puntaje con su nombre y en caso no introduzca su nombre el programa lo guardara como Anonimo</li>
+            <li class="justify">Se cuenta con la opcion <i>score</i> que muestra el los puntajes de cada usuario ordenados de manera descendente</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso4.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Guardar en archivo personalizado</strong></small>
+          <p class="regular text-md">Se cuenta con una opcion adicional para que se pueda guardar los scores en un archivo dado por el usuario</p>
+          <ul class="regular text-md">
+            <li class="justify">Salir del programa con la opcion <i>exit</i></li>
+            <li>Ejecutamos nuevamente el programa pero esta dandole con <i>ruby main.rb custom_scores.json</i> en donde el nombre custom_scores.json es el archivo json en donde se guardaran los puntajes (se le puede poner el nombre que desee al archivo json pero siempre con el formato.json al final)</li>
+            <li class="justify">Para mas informacion sobre el proyecto ingresa a <a href="https://github.com/cverah/ruby-CalenCly/blob/main/README.md">README.md</a>, asimismo recordar el modelo de Happy paths (buen usuario) en los programas</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso5.png" alt="">
         </article>
 
       </div>
