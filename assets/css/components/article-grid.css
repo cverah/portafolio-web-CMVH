@@ -139,6 +139,47 @@
   height: auto;
 }
 
+/* estilos para experiencia labora*/
+
+.work_experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work_experience-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--green-700);
+}
+
+.work_experience-item-table {
+  text-align: left;
+}
+
+.work_experience-item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* imagenes cuadradras dentro de experinecia laboral */
+
+.works-experience-img {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.works-experience-img img {
+  max-width: 100%;
+  /* Ajustar imágenes al ancho del contenedor */
+  height: 100%;
+  /* Mantener la proporción de aspecto */
+}
+
+
 @media screen and (max-width: 970px) {
   .article-grid-hobbies {
     display: grid;

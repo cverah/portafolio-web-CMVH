@@ -151,7 +151,10 @@
   margin-bottom: 2.5rem;
 }
 
-/*radius*/
+/*borader and radius*/
+.border-green-700 {
+  border: 1px solid var(--green-700);
+}
 
 .br-1\/2 {
   border-radius: 0.5rem;
@@ -219,6 +222,10 @@
 
 #gap-1\.25rem {
   gap: 1.25rem;
+}
+
+#gap-1rem {
+  gap: 1rem;
 }
 
 #gap-8 {
