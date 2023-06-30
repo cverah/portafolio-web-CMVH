@@ -166,8 +166,8 @@
 
 
 .checkbox__input:checked {
-  background-color: var(--primary-regular);
-  border: 1px solid var(--primary-regular);
+  background-color: var(--green-700);
+  border: 1px solid var(---green-700);
   background-image: url(/assets/images/icons/check-checked.svg);
   background-repeat: no-repeat;
   background-position: center;
