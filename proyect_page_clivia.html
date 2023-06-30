@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/article-grid.css">
+    <link rel="stylesheet" href="./assets/css/components/section-proyect-page.css">
+    <title>HOME CMVH</title>
+    <link rel="shortcut icon" href="./assets/images/icons.png" type="image/x-icon">
+    <style>
+      /* *{
+        border: 1px solid green
+      } */
+    </style>
+  </head>
+<body>
+  <header class="header">
+    <div class="container-lg">
+      <!-- <h1 class="heading-md semi-bold header__logo">HEADER</h1> -->
+      <nav class="navbar">
+        <a class="text-decoration-none" href="index.html">
+          <div class="start italic">
+            <h1 class="heading-md medium green-900">Cristhian M. Vera Huamani</h1>
+            <p class="regular text-line-height-1.1rem text-decoration-none green-900">cree en ti y los vas a lograr</p>
+          </div>
+        </a>
+        <!-- # hamburguesa media querie -->
+        <img class="hamb" src="./assets/images/icons/hamb.svg" alt="hamb" onclick="showMenu()">
+        
+        <ul class="navbar--links list-style-none">
+          <li>
+            <a href="index.html" class="link text-xl">Inicio</a>
+          </li>
+          <li>
+            <a href="about.html" class="link text-xl">Acerca de Mi</a>
+          </li>
+          <li>
+              <a href="portafolio.html" class="link text-xl">Portafolio</a>
+          </li>
+          <li>
+            <a href="contact.html" type="button" class="button button--primary button--lg text-decoration-none">Contactame</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- nav para mobile  -->
+      <nav class="navbar-mobile">
+        <div class="menu-mobile">
+          <ul class="navbar--links--mobile list-style-none">
+            <li>
+              <a href="index.html" class="link text-xl">Inicio</a>
+            </li>
+            <li>
+              <a href="about.html" class="link text-xl">Acerca de Mi</a>
+            </li>
+            <li>
+              <a href="portafolio.html" class="link text-xl">Portafolio</a>
+            </li>
+            <li>
+              <a href="contact.html" type="button" class="button button--primary button--lg text-decoration-none">Contactame</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section-padding-sm bg-green-150">
+    <div class="container-lg">
+      <div class="section-general-proyect">
+        <div class="section-description-proyect">
+          <h2 class="heading-2xl semi-bold mb-1.25 ">Clivia Generator</h2>
+          <p class="text-lg mb-1 justify">Este es un programa que te permite responder 10 preguntas de genero randomico, por cada respuesta correcta se obtiene 10 puntos, 0 puntos por respuesta incorrecta, al finalizar se te permitira guardar el nombre del jugador y la opcion de visualizar los puntajes en orden de merito. Este programa realiza solicitudes efectivas y obtiene respuestas a través de la red usando Ruby, trabajando con API (TRIVIA) para manejar, usar y guardar la información de manera eficiente en un archivo JSON</p>
+          <p class="text-lg mb-1 justify">En esta parte de ruby trabajamos con la gema de ruby json <i>(require "json")</i> para el manejo de archivos de formato JSON , httparty <i>(require "httparty")</i> para conexion URL de internet, terminal table <i>(require "terminal-table")</i> para impresion en formato de tabla.</p>
+          <p class="text-lg mb-1">El API a consumir en este proyecto es el OPEN TRIVIA API que se encuentra en <a href="https://opentdb.com/api.php?amount=10" target="_blank">AQUI</a></p>
+          <a class="button--xl button--primary text-decoration-none inline-block br-1/2" href="https://github.com/cverah/ruby_Generador_CLIvia" target="_blank">Ir al repositorio</a>
+        </div>
+        <img class="br-1/2" src="./assets/images/photos/proyect-clivia/img-clivia-generator.png" alt="img-clivia-generator">      
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding-sm bg-green-80">
+    <div class="container-lg">
+      <div class="center mb-1">
+        <h2 class="heading-lg mb-1/4">¡EJECUTALO TU MISMO!</h2>
+        <p class="text-lg">Pasos para ejecutar el funcionamiento del proyecto</p>
+      </div>
+      <div class="article-grid-2columns">
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline semi-bold">Paso Nro 1: <strong class="semi-bold">Clonar el repositorio</strong></small>
+          <p class="regular text-md">Realizamos lo siguiente:</p>
+          <ul class="regular text-md">
+            <li>Create una carpeta y en alli abre un teminal</li>
+            <li>En la terminal ejecutamos el comando <i>git clone git@github.com:cverah/ruby_Generador_CLIvia.git</i></li>
+            <li>luego de ello ingresamos a la carpeta clonada (se tiene que visualizar los archivos clonados)</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso1.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 2: <strong class="semi-bold">Ejecutar Bundle install</strong></small>
+          <p class="regular text-md">Una vez terminado el paso 1 realizamos la instalacion de bundle install para que se puedan descargar las gemas del proyecto en este caso el <i>json</i>, <i>terminal-table</i> y <i>httparty</i></p>
+          <ul class="regular text-md">
+            <li>en la terminal ejecutamos el comando <i>bundle install</i></li>
+            <li>Esperamos a que se descarguen las gemas el tiempo va depender de la velocidad de descarga de su internet</i></li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia_paso2.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 3: <strong class="semi-bold">Ejecutar el proyecto</strong></small>
+          <p class="regular text-md">Una vez terminado el paso 2 ejecutamos el proyecto para ello hacemos lo siguiente:</p>
+          <ul class="regular text-md">
+            <li>Ejecutamos el archivo <i>main.rb</i> con el comando <i>ruby main.rb</i></li>
+            <li>Ya dentro del programa escribimos <i>random</i> y el sistema mostrara preguntas randomicas que tendran que responder por el indice de las respuestas</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso3.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Opcion Score</strong></small>
+          <p class="regular text-md">Ejecutamos lo siguiente:</p>
+          <ul class="regular text-md">
+            <li class="justify">Al finalizar las 10 preguntas el usuario tiene la opcion de guardar su puntaje con su nombre y en caso no introduzca su nombre el programa lo guardara como Anonimo</li>
+            <li class="justify">Se cuenta con la opcion <i>score</i> que muestra el los puntajes de cada usuario ordenados de manera descendente</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso4.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Guardar en archivo personalizado</strong></small>
+          <p class="regular text-md">Se cuenta con una opcion adicional para que se pueda guardar los scores en un archivo dado por el usuario</p>
+          <ul class="regular text-md">
+            <li class="justify">Salir del programa con la opcion <i>exit</i></li>
+            <li>Ejecutamos nuevamente el programa pero esta dandole con <i>ruby main.rb custom_scores.json</i> en donde el nombre custom_scores.json es el archivo json en donde se guardaran los puntajes (se le puede poner el nombre que desee al archivo json pero siempre con el formato.json al final)</li>
+            <li class="justify">Para mas informacion sobre el proyecto ingresa a <a href="https://github.com/cverah/ruby-CalenCly/blob/main/README.md">README.md</a>, asimismo recordar el modelo de Happy paths (buen usuario) en los programas</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso5.png" alt="">
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding-sm bg-secondary-light ">
+    <div class="container-lg">
+      <h2 class="mb-1/4 semi-bold heading-2rem center">Como fue construido</h2>
+      <p class="text-lg light mb-1/4 center">Este trabajo fue desarrollado de manera indivudual</p>
+      <div class="article-3-columns">
+        <article class="article-grid-item" id="justify-start">
+          <div>
+            <img class="padding-0.5 br-1/2 bg-white" src="./assets/images/icons/icon-terminal-white.svg" alt="">
+          </div>
+          <div>
+            <h3 class="mb-half heading-1.125rem semi-bold">Conectando a la terminal</h3>
+            <p class="text-md light">En un prinicipio se trata de entender lo que quiere que el programa realice, una vez terminado se define las tareas iniciales, se crea los issues en github, una vez terminada se ejecutan pruebas y si satisface la solucion se valida la tarea</p>
+          </div>          
+        </article>
+
+        <article class="article-grid-item" id="justify-start">
+          <div>
+            <img class="padding-0.5 br-1/2 bg-white" src="./assets/images/icons/icon-ruby-white.svg" alt="">
+          </div>
+          <div>
+            <h3 class="mb-half heading-1.125rem semi-bold">Comenzar a codear</h3>
+            <p class="text-md light">Una vez asignada la tarea, se crea el branch(rama) en git y luego comienza a realizar el codigo en el lenguaje de programacion ruby que satisfaga la tarea en mencion y tratando de optimizar dicho codigo (para ello en ruby usamos el <strong>RUBOCOP</strong>)</p>
+          </div>          
+        </article>
+
+        <article class="article-grid-item" id="justify-start">
+          <div>
+            <img class="padding-0.5 br-1/2 bg-white" src="./assets/images/icons/icon-github-white.svg" alt="">
+          </div>
+          <div>
+            <h3 class="mb-half heading-1.125rem semi-bold">Creacion de commit en git a github</h3>
+            <p class="text-md light">Una vez terminado el codigo y siendo satisfactorio la solucion se realiza un push dentro de la rama donde trabajo a la rama de prueba (en la mayor parte con nombre <strong>develop</strong>), se resuelven los conflictos en caso haya y nuevamente regresar a la asignacion de tareas hasta completar el proyecto.Una vez finalizado terminado y realizado prueba se migra la rama de prueba (develop) a la rama principal que es <strong>main</strong></p>
+          </div>          
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container-lg">
+      <h2 class="heading-2rem semi-bold mb-1/4 center">Nuestro Equipo de Trabajo</h2>
+      <div class="article-3-columns">
+        <article class="article-grid-item" id="padding-0">
+          <img id="img-team" src="./assets/images/photos/img-carnet-CMVH.jpg" alt="img-carnet-CMVH">  
+          <div>
+            <p class="semi-bold center green-900 text-xl">Cristhian Mario Vera Huamani</p>
+            <div class="work_networks_page">
+              <a href="https://github.com/cverah" target="_blank"><img src="./assets/images/icons/icon-github.svg"></a>
+              <a href="#"><img src="./assets/images/icons/icon-linkedink.svg"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-grid-item" id="padding-0">
+          <img id="img-team" src="./assets/images/photos/img-persona-anonima.png" alt="img-carnet-CMVH">  
+          <div>
+            <p class="semi-bold center green-900 text-xl">Anonymos</p>
+            <div class="work_networks_page">
+              <a href="#" target="_blank"><img src="./assets/images/icons/icon-github.svg"></a>
+              <a href="#"><img src="./assets/images/icons/icon-linkedink.svg"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-grid-item" id="padding-0">
+          <img id="img-team" src="./assets/images/photos/img-persona-anonima.png" alt="img-carnet-CMVH">  
+          <div>
+            <p class="semi-bold center green-900 text-xl">Anonymos</p>
+            <div class="work_networks_page">
+              <a href="#" target="_blank"><img src="./assets/images/icons/icon-github.svg"></a>
+              <a href="#"><img src="./assets/images/icons/icon-linkedink.svg"></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-padding-1rem footer">
+    <div class="container-lg center">
+      <div class="article-grid-2columns">
+        <div class="footer-grid-item text-xl">
+          <strong>@Cristhian Vera 2023</strong>
+          <p>Abancay - Apurimac - Peru</p>
+          <div class="footer-contacs">
+            <img id="footer-icons" src="./assets/images/icons/square-whatsapp.svg" alt="icon-square-whatsapp">
+            <p class="center">+51 928646027</p>
+          </div>
+        </div>
+
+        <div class="footer-grid-item text-xl">
+          <strong>Mis Redes Sociales</strong>
+          <div  class="footer-contacs" id="gap-1.25rem">
+            <a href="https://www.facebook.com/cristianmario.verahuamani" target="_blank">
+              <img src="./assets/images/icons/square-facebook.svg" alt="icon-square-facebook">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/linkedin-icon.svg" alt="icon-linkedink">
+            </a>
+            <a href="https://www.instagram.com/cristhmverahuamani/" target="_blank">
+              <img src="./assets/images/icons/square-instagram.svg" alt="icons-square-instagram">
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <footer class="bg-black">
+    <div class="flex center bg-black">
+      <strong class="color-white" style="width: 100%;">Desarrollado con HTML y CSS puro</strong>
+      </div>
+  </footer>
+
+  <script>
+    let navBarMobile = document.querySelector(".navbar--links--mobile");
+    // alert(navBarMobile)
+    function showMenu(){
+      navBarMobile.classList.toggle("navbar--links--mobile--open");
+    }
+  </script>
+</body>
+</html>
