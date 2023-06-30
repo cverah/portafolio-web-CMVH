@@ -71,13 +71,15 @@
     <div class="container-lg">
       <div class="section-general-proyect">
         <div class="section-description-proyect">
-          <h2 class="heading-2xl semi-bold mb-1.25 ">Clivia Generator</h2>
-          <p class="text-lg mb-1 justify">Este es un programa que te permite responder 10 preguntas de genero randomico, por cada respuesta correcta se obtiene 10 puntos, 0 puntos por respuesta incorrecta, al finalizar se te permitira guardar el nombre del jugador y la opcion de visualizar los puntajes en orden de merito. Este programa realiza solicitudes efectivas y obtiene respuestas a través de la red usando Ruby, trabajando con API (TRIVIA) para manejar, usar y guardar la información de manera eficiente en un archivo JSON</p>
-          <p class="text-lg mb-1 justify">En esta parte de ruby trabajamos con la gema de ruby json <i>(require "json")</i> para el manejo de archivos de formato JSON , httparty <i>(require "httparty")</i> para conexion URL de internet, terminal table <i>(require "terminal-table")</i> para impresion en formato de tabla.</p>
-          <p class="text-lg mb-1">El API a consumir en este proyecto es el OPEN TRIVIA API que se encuentra en <a href="https://opentdb.com/api.php?amount=10" target="_blank">AQUI</a></p>
-          <a class="button--xl button--primary text-decoration-none inline-block br-1/2" href="https://github.com/cverah/ruby_Generador_CLIvia" target="_blank">Ir al repositorio</a>
+          <h2 class="heading-2xl semi-bold mb-1.25 ">INSIGHTS</h2>
+          <p class="text-lg mb-1 justify">Este programa fue desarollado en base a un archivo de formato CSV que contiene informacion de encuestas de aproximadamente 80 mil personas que visitaron de restaurantes alrededor del mundo, el proyecto esta realizado con una base de datos en POSTGRES (diagrama entidad relacion - ERD), asimismo el programa permite la importacion de la informacion que contiene el archivo CSV a la base de datos, lo cual en adelante nos da las facilidades de realizar consultas a la base de datos en base y extraer informacion estadistica que desea conocer el usuario.</p>
+          <p class="text-lg mb-1 justify">Insights esta hecho con ruby y postgres (base de datos), trabajamos con las gemas pg <i>(require "pg")</i> para establecer conexion con la base de datos, csv <i>(require "csv")</i> para el manejo de archivos de formato CSV, terminal table <i>(require "terminal-table")</i> para impresion en formato de tabla.</p>
+          <div class="section-footer-buttons">
+          <a class="button--xl button--primary text-decoration-none inline-block br-1/2" href="https://github.com/cverah/insights-ruby-postgres" target="_blank">Ir al repositorio</a>
+          <a class="button--xl button--primary text-decoration-none inline-block br-1/2" href="https://github.com/cverah/insights-ruby-postgres/tree/main/bd_insights" target="_blank">Ver ERD Base de datos Insights</a>
+          </div>
         </div>
-        <img class="br-1/2" src="./assets/images/photos/proyect-clivia/img-clivia-generator.png" alt="img-clivia-generator">      
+        <img class="br-1/2" src="./assets/images/photos/insight/insights-principal.png" alt="img-insight-principal">      
       </div>
     </div>
   </section>
@@ -90,55 +92,69 @@
       </div>
       <div class="article-grid-2columns">
         <article class="article-grid-item">
-          <small class="text-uppercase text-md overline semi-bold">Paso Nro 1: <strong class="semi-bold">Clonar el repositorio</strong></small>
-          <p class="regular text-md">Realizamos lo siguiente:</p>
-          <ul class="regular text-md">
-            <li>Create una carpeta y en alli abre un teminal</li>
-            <li>En la terminal ejecutamos el comando <i>git clone git@github.com:cverah/ruby_Generador_CLIvia.git</i></li>
-            <li>luego de ello ingresamos a la carpeta clonada (se tiene que visualizar los archivos clonados)</li>
+          <small class="text-uppercase text-md overline semi-bold">Paso Nro 1: <strong class="semi-bold">Instalar e iniciar POSTGRES</strong></small>
+          <p class="regular text-md">En Linux realizamos lo siguiente:</p>
+          <ul class="regular text-md justify">
+            <li>En nuestra terminal ejecutamos los comandos <i>sudo apt update</i> y el mas importante <i>sudo apt install postgresql postgresql-contrib</i></li>
+            <li>Verificamos la version de postgres instalada</li>
+            <li class="justify">Una vez terminada la instalacion, para que nuestro programa corra se tiene que levantar el servicio de base de datos para ello escribimos en nuestra terminal el comando <i>sudo service postgresql start</i></li>
+            <li>En muchos casos al levantar el servicio de base de datos. se tendra que completar con la clave del sistema operativo</li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso1.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso1-1.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso1-2.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso1-3.png" alt="">
         </article>
 
         <article class="article-grid-item">
-          <small class="text-uppercase text-md overline">Paso Nro 2: <strong class="semi-bold">Ejecutar Bundle install</strong></small>
-          <p class="regular text-md">Una vez terminado el paso 1 realizamos la instalacion de bundle install para que se puedan descargar las gemas del proyecto en este caso el <i>json</i>, <i>terminal-table</i> y <i>httparty</i></p>
+          <small class="text-uppercase text-md overline semi-bold">Paso Nro 2: <strong class="semi-bold">Clonar el repositorio</strong></small>
+          <p class="regular text-md">Realizamos lo siguiente:</p>
+          <ul class="regular text-md">
+            <li>Create una carpeta y en alli abre un teminal</li>
+            <li>En la terminal ejecutamos el comando <i>git clone git@github.com:cverah/insights-ruby-postgres.git</i></li>
+            <li>luego de ello ingresamos a la carpeta clonada (se tiene que visualizar los archivos clonados)</li>
+          </ul>
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso2.png" alt="">
+        </article>
+
+        <article class="article-grid-item">
+          <small class="text-uppercase text-md overline">Paso Nro 3: <strong class="semi-bold">Ejecutar Bundle install</strong></small>
+          <p class="regular text-md justify">Una vez terminado el paso 1 realizamos la instalacion de bundle install para que se puedan descargar las gemas del proyecto en este caso el <i>pg</i>, <i>csv</i> y <i>terminal-table</i></p>
           <ul class="regular text-md">
             <li>en la terminal ejecutamos el comando <i>bundle install</i></li>
             <li>Esperamos a que se descarguen las gemas el tiempo va depender de la velocidad de descarga de su internet</i></li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia_paso2.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso3.png" alt="">
         </article>
 
         <article class="article-grid-item">
-          <small class="text-uppercase text-md overline">Paso Nro 3: <strong class="semi-bold">Ejecutar el proyecto</strong></small>
-          <p class="regular text-md">Una vez terminado el paso 2 ejecutamos el proyecto para ello hacemos lo siguiente:</p>
+          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Create BD and Insert Data</strong></small>
+          <p class="regular text-md justify">Ejecutamos el proyecto iniciando con la creacion de la bd y importacion de datos desde el archivo CSV</p>
           <ul class="regular text-md">
-            <li>Ejecutamos el archivo <i>main.rb</i> con el comando <i>ruby main.rb</i></li>
-            <li>Ya dentro del programa escribimos <i>random</i> y el sistema mostrara preguntas randomicas que tendran que responder por el indice de las respuestas</li>
+            <li class="justify">En la terminal escribimos <i>bash bd_reset.sh</i> este archivo de formato.bash contiene comandos de terminal ruby que crea la base de datos insights y importa la informacion del archivo CSV </li>
+            <li class="justify">Saldra mensajes de CREATE TABLE que es propio de ruby al momento de crear tablas de base de datos y asimismo demorara alrededor de 2 minutos en importar la informacion de aproximadamente 80 mil datos</li>
+            <li class="justify">Para comprobar la informacion a la bd podemos hacer el comando <i>SELECT * FROM clients;</i> a continuacion debe mostrar la informacion de la tabla clients, luego al final para salir del postgres ingresamos el comando <i>\q</i></li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso3.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso4.png" alt="">
         </article>
 
         <article class="article-grid-item">
-          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Opcion Score</strong></small>
+          <small class="text-uppercase text-md overline">Paso Nro 5: <strong class="semi-bold">Ejecutamos el Programa</strong></small>
           <p class="regular text-md">Ejecutamos lo siguiente:</p>
           <ul class="regular text-md">
-            <li class="justify">Al finalizar las 10 preguntas el usuario tiene la opcion de guardar su puntaje con su nombre y en caso no introduzca su nombre el programa lo guardara como Anonimo</li>
-            <li class="justify">Se cuenta con la opcion <i>score</i> que muestra el los puntajes de cada usuario ordenados de manera descendente</li>
+            <li class="justify">Una vez ya teniendo la base de datos con la informacion respectiva ejecutamos el archivo restaurant-insights.rb con el comando <i>ruby restaurant-insights.rb</i> se podra visualizar un menu con las 10 opciones.</li>
+            <li class="justify">Se tendra que ejecutar los comandos segun los indices de las opciones, para la opcion 1 ingresamos por teclado el <i>1</i> </li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso4.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso5.png" alt="">
         </article>
 
         <article class="article-grid-item">
-          <small class="text-uppercase text-md overline">Paso Nro 4: <strong class="semi-bold">Guardar en archivo personalizado</strong></small>
-          <p class="regular text-md">Se cuenta con una opcion adicional para que se pueda guardar los scores en un archivo dado por el usuario</p>
+          <small class="text-uppercase text-md overline">Paso Nro 6: <strong class="semi-bold">Mas opciones</strong></small>
+          <p class="regular text-md">Ejecutamos lo siguiente:</p>
           <ul class="regular text-md">
-            <li class="justify">Salir del programa con la opcion <i>exit</i></li>
-            <li>Ejecutamos nuevamente el programa pero esta dandole con <i>ruby main.rb custom_scores.json</i> en donde el nombre custom_scores.json es el archivo json en donde se guardaran los puntajes (se le puede poner el nombre que desee al archivo json pero siempre con el formato.json al final)</li>
-            <li class="justify">Para mas informacion sobre el proyecto ingresa a <a href="https://github.com/cverah/ruby-CalenCly/blob/main/README.md">README.md</a>, asimismo recordar el modelo de Happy paths (buen usuario) en los programas</li>
+            <li class="justify">Insights tiene 10 opciones por lo que solo la opcion 1 tiene hasta 3 formas de realizar la consulta, la primera ya lo vimos en el paso 5, pero tambien se puede consultar por categoria con <i>1 category=Italian</i>, y por ciudad con <i>1 city=South Hilde</i></li>
+            <li class="justify">Para mayor informacion sobre las demas opciones y del proyecto ingresa a <a href="https://github.com/cverah/insights-ruby-postgres/blob/main/README.md">README.md</a>, asimismo recordar el modelo de Happy paths (buen usuario) en los programas</li>
           </ul>
-          <img class="br-1/2" src="./assets/images/photos/proyect-clivia/clivia-paso5.png" alt="">
+          <img class="br-1/2" src="./assets/images/photos/insight/insight-paso6.png" alt="">
         </article>
 
       </div>
@@ -148,7 +164,7 @@
   <section class="section-padding-sm bg-secondary-light ">
     <div class="container-lg">
       <h2 class="mb-1/4 semi-bold heading-2rem center">Como fue construido</h2>
-      <p class="text-lg light mb-1/4 center">Este trabajo fue desarrollado de manera indivudual</p>
+      <p class="text-lg light mb-1/4 center">En nuestro equipo de trabajo fue construido de la sgte manera</p>
       <div class="article-3-columns">
         <article class="article-grid-item" id="justify-start">
           <div>
@@ -156,7 +172,7 @@
           </div>
           <div>
             <h3 class="mb-half heading-1.125rem semi-bold">Conectando a la terminal</h3>
-            <p class="text-md light">En un prinicipio se trata de entender lo que quiere que el programa realice, una vez terminado se define las tareas iniciales, se crea los issues en github, una vez terminada se ejecutan pruebas y si satisface la solucion se valida la tarea</p>
+            <p class="text-md light justify">En un prinicipio el grupo de trabajo trata de entender lo que quiere que el programa realice, una vez terminado se reparte las tareas iniciales y se crea los issues en github a cada integrante del grupo, una vez terminada se comparte la tara realizada y pueda ser aprobada por el equipo de trabajo</p>
           </div>          
         </article>
 
@@ -166,7 +182,7 @@
           </div>
           <div>
             <h3 class="mb-half heading-1.125rem semi-bold">Comenzar a codear</h3>
-            <p class="text-md light">Una vez asignada la tarea, se crea el branch(rama) en git y luego comienza a realizar el codigo en el lenguaje de programacion ruby que satisfaga la tarea en mencion y tratando de optimizar dicho codigo (para ello en ruby usamos el <strong>RUBOCOP</strong>)</p>
+            <p class="text-md light justify">Una vez que cada integrante tiene su tarea asignada, el integrante crea su branch(rama) en git y luego comienza a realizar el codigo en el lenguaje de programacion ruby que satisfaga la tarea en mencion y tratando de optimizar dicho codigo (para ello en ruby usamos el <strong>RUBOCOP</strong>)</p>
           </div>          
         </article>
 
@@ -176,7 +192,8 @@
           </div>
           <div>
             <h3 class="mb-half heading-1.125rem semi-bold">Creacion de commit en git a github</h3>
-            <p class="text-md light">Una vez terminado el codigo y siendo satisfactorio la solucion se realiza un push dentro de la rama donde trabajo a la rama de prueba (en la mayor parte con nombre <strong>develop</strong>), se resuelven los conflictos en caso haya y nuevamente regresar a la asignacion de tareas hasta completar el proyecto.Una vez finalizado terminado y realizado prueba se migra la rama de prueba (develop) a la rama principal que es <strong>main</strong></p>
+            <p class="text-md light justify">Una vez terminado el codigo y siendo esta aprobado por el equipo de trabajo se realiza un push dentro de la rama donde trabajo a la rama de prueba (en la mayor parte con nombre <strong>develop</strong>) se resuelven los conflictos en caso haya y nuevamente regresar a la asignacion de tareas hasta completar el proyecto.Una vez finalizado terminado y realizado prueba se migra la rama de prueba (develop) a la rama principal que es <strong>main</strong></p>
+     
           </div>          
         </article>
       </div>
@@ -201,7 +218,7 @@
         <article class="article-grid-item" id="padding-0">
           <img id="img-team" src="./assets/images/photos/img-persona-anonima.png" alt="img-carnet-CMVH">  
           <div>
-            <p class="semi-bold center green-900 text-xl">Anonymos</p>
+            <p class="semi-bold center green-900 text-xl">David Rojas</p>
             <div class="work_networks_page">
               <a href="#" target="_blank"><img src="./assets/images/icons/icon-github.svg"></a>
               <a href="#"><img src="./assets/images/icons/icon-linkedink.svg"></a>
@@ -212,7 +229,7 @@
         <article class="article-grid-item" id="padding-0">
           <img id="img-team" src="./assets/images/photos/img-persona-anonima.png" alt="img-carnet-CMVH">  
           <div>
-            <p class="semi-bold center green-900 text-xl">Anonymos</p>
+            <p class="semi-bold center green-900 text-xl">Edson Fernandez</p>
             <div class="work_networks_page">
               <a href="#" target="_blank"><img src="./assets/images/icons/icon-github.svg"></a>
               <a href="#"><img src="./assets/images/icons/icon-linkedink.svg"></a>

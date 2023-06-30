@@ -4,13 +4,23 @@
 }
 
 .section-description-proyect {
-  padding: 0 32px;
+  padding: 0 32px 0 0;
 }
 
 /* no poner la imagen dentro de un div por que sino noocupa el width al 100% */
 .section-general-proyect img {
   width: 100%;
   height: auto;
+}
+
+.section-footer-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.section-footer-buttons a {
+  padding: 8px 30px;
 }
 
 .article-3-columns {
